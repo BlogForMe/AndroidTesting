@@ -1,4 +1,4 @@
-package com.jonzhou.androidtesting;
+package com.jon.test;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.jonzhou.androidtesting;
+package com.jon.test;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

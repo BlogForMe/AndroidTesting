@@ -1,4 +1,4 @@
-package com.jonzhou.androidtesting.util;
+package com.jon.test.util;
 
 /**
  * Created by jon on 1/22/18.

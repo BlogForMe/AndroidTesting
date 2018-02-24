@@ -1,8 +1,4 @@
-package com.jonzhou.androidtesting;
-
-import com.jonzhou.androidtesting.util.Calculator;
-
-import junit.framework.Assert;
+package com.jon.test;
 
 import org.junit.Test;
 
