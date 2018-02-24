@@ -1,5 +1,7 @@
 package com.jon.test;
 
+import android.text.TextUtils;
+
 import com.jon.test.junit.Calculator;
 
 import junit.framework.Assert;
@@ -7,6 +9,8 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by jon on 1/22/18.
@@ -44,6 +48,17 @@ public class CalculatorTest {
     }
 
 
+    /**
+     * 超时
+     */
+    @Test(timeout = 10)
+    public void  textTimeOut(){
+        try {
+            Thread.sleep(8);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }
