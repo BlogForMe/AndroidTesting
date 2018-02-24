@@ -5,6 +5,7 @@ import com.jonzhou.androidtesting.util.Calculator;
 import junit.framework.Assert;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -30,4 +31,18 @@ public class CalculatorTest {
         int product = mCalculator.multiply(2,4);
         Assert.assertEquals(8,product);
     }
+
+    @Test
+    @Ignore("not implemented yet")      //忽略这个方法
+    public  void  testFactorial(){
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public  void  test(){
+        mCalculator.divide(4,0);
+    }
+
+
+
+
 }
