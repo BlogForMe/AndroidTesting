@@ -1,6 +1,6 @@
 package com.jon.test;
 
-import com.jon.test.util.Calculator;
+import com.jon.test.junit.Calculator;
 
 import junit.framework.Assert;
 
@@ -10,6 +10,7 @@ import org.junit.Test;
 
 /**
  * Created by jon on 1/22/18.
+ * https://www.jianshu.com/p/03118c11c199
  */
 
 public class CalculatorTest {

@@ -1,4 +1,4 @@
-package com.jon.test.util;
+package com.jon.test.junit;
 
 /**
  * Created by jon on 1/22/18.
