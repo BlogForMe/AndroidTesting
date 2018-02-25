@@ -32,4 +32,8 @@ dependencies {
     testImplementation "org.robolectric:robolectric:3.6.1"
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    testCompile "org.mockito:mockito-inline:+"
+    implementation 'com.jakewharton.timber:timber:4.6.0'
+
+
 }

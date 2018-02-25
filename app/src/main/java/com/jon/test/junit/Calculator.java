@@ -5,7 +5,7 @@ package com.jon.test.junit;
  */
 
 public class Calculator {
-    public int add(int one, int another) {
+    public static int add(int one, int another) {
         return one + another;
     }
 
