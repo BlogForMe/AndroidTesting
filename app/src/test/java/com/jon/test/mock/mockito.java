@@ -13,6 +13,7 @@ import static org.mockito.Mockito.atMost;
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
@@ -24,10 +25,24 @@ import static org.mockito.Mockito.verify;
 public class mockito {
     LinkedList mockedList;
 
+
     @Before
     public void setUp() {
         mockedList = mock(LinkedList.class);
     }
+
+    @Test
+    public void mockDifSpy() throws Exception {
+        User userMock = mock(User.class);
+        userMock.setNumber(2);
+        int num = userMock.getNumber();
+        System.out.println("mock返回  "+num);
+
+        User userSpy = spy(User.class);
+        userSpy.setNumber(5);
+        System.out.println("spy返回   "+userSpy.getNumber());
+    }
+
 
     @Test
     public void verify01() {
@@ -54,6 +69,7 @@ public class mockito {
         mockedList.add("three times");
         mockedList.add("three times");
         mockedList.add("three times");
+
 
         //following two verifications work exactly the same - times(1) is used by default
         verify(mockedList).add("once");
