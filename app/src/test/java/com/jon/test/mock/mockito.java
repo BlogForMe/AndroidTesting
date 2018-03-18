@@ -1,28 +1,20 @@
 package com.jon.test.mock;
 
-import com.jon.test.Print;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InOrder;
-import org.mockito.Mockito;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import timber.log.Timber;
-
-import static com.jon.test.Print.println;
 import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.atMost;
-import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 /**
  * Created by jon on 2/25/18.
@@ -112,11 +104,10 @@ public class mockito {
         InOrder inOrder1 = inOrder(firstMock, secondMock);
 
         //following will make sure that firstMock was called before secondMock
-        inOrder1.verify(firstMock).add("was called first");
+        inOrder1.verify(firstMock).add("was called first");   //第一个方法有没有调用
         inOrder1.verify(secondMock).add("was called second");
 
         // Oh, and A + B can be mixed together at will
-
     }
 
 
