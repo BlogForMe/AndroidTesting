@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.jon.test.SecondActivity"></activity>
+
+        <activity android:name=".espresso.InstrumentActivity" />
     </application>
 
 </manifest>
